@@ -1,0 +1,13 @@
+version: "3.8"
+
+services:
+  app:
+    image: kube-practice
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "5500:5500"
+    environment:
+      NODE_ENV: production
+    restart: always
