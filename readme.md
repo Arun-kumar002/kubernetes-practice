@@ -1,4 +1,4 @@
-<!-- Docker Hub Push -->
+##Docker Hub Push
 
 1.docker login -u username
 docker login -u captaindexter
@@ -14,7 +14,7 @@ docker push captaindexter/kube-practice:latest
 
 ![alt text](image.png)
 
-<!-- minikube installation -->
+##minikube installation
 
 curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64
 
@@ -33,12 +33,12 @@ minikube stop
 minikube delete
 
 
-<!-- kube control -->
+##kube control
 
 sudo snap install kubectl --classic
 
 
-<!-- kube cmds -->
+##kube cmds
 
 kubectl get pods
 
@@ -56,7 +56,7 @@ kubectl get all
 
 minikube service nodeapp-service
 
-<!-- For logs -->
+##For logs
 kubectl logs pod_name
 
 kubectl logs nodeapp-deployment-d85fddb96-xl477 or kubectl logs nodeapp-deployment-d85fddb96-xl477 -f
