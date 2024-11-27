@@ -1,14 +1,14 @@
 ##Docker Hub Push
 
 1.docker login -u username
-docker login -u captaindexter
+(ex:docker login -u captaindexter)
 
 2.docker tag image_name captaindexter/kube-practice:latest
-docker tag kube-practice:latest captaindexter/kube-practice:latest
+(ex:docker tag kube-practice:latest captaindexter/kube-practice:latest)
 
 
 3.docker push <your-docker-hub-username>/kube-practice:latest
-docker push captaindexter/kube-practice:latest
+(ex:docker push captaindexter/kube-practice:latest)
 
 
 
@@ -59,4 +59,4 @@ minikube service nodeapp-service
 ##For logs
 kubectl logs pod_name
 
-kubectl logs nodeapp-deployment-d85fddb96-xl477 or kubectl logs nodeapp-deployment-d85fddb96-xl477 -f
+(ex:kubectl logs nodeapp-deployment-d85fddb96-xl477 or kubectl logs nodeapp-deployment-d85fddb96-xl477 -f)
